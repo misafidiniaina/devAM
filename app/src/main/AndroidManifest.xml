@@ -10,6 +10,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
         android:allowBackup="true"
@@ -31,6 +32,7 @@
             </intent-filter>
         </activity>
         <service android:name=".WifiScanService" android:exported="false"> </service>
+        <service android:name=".WifiTrackerService"> </service>
     </application>
 
 </manifest>

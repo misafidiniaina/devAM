@@ -7,10 +7,51 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="406dp"
-        android:layout_height="728dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"/>
 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="287dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="OOPS !!!"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/representation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="354dp"
+                    app:srcCompat="@drawable/nonet" />
+
+                <TextView
+                    android:id="@+id/text_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:gravity="center"
+                    android:text="you're not connected to a\n network"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button_action"
+                    android:layout_width="179dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Choose a network"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
